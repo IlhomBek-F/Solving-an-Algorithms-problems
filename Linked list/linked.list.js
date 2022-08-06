@@ -64,10 +64,11 @@ list.insertAt(1, {user: 'Elon'});   // ['Susan' 'Elon' , 'Jack' , 'John']
 
 list.size // 4
 
+const arrUser = list.nodes.map(e => e.value.user) // ['Susan', 'Elon', 'Jack', 'John']
+
 list.getAt(2) // Jack
 
 list.deleteAt(2); // ['Susan', 'Elon' , 'John'];
 
 list.clear(); // [];
 
-const arrUser = list.nodes.map(e => e.value.user) // ['Susan', 'Elon', 'Jack', 'John']
